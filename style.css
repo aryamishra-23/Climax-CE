@@ -1,122 +1,398 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial;
+/* style.css - dark asthetic theme for Climax CCE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-body{
-
-background:black;
-color:white;
-text-align:center;
-
+body {
+  background-color: #0b0c0e;
+  background-image: radial-gradient(circle at 15% 30%, #1a1f2a 0%, #030405 90%);
+  color: #e0e0e0;
+  line-height: 1.5;
+  min-height: 100vh;
+  padding: 1rem;
 }
 
-/* hero */
-
-.hero{
-
-padding:120px 20px;
-background:radial-gradient(circle,#111,#000);
-
+/* container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.hero h1{
-
-font-size:50px;
-margin-bottom:10px;
-
+/* glassmorphic cards with red/amber undertones */
+.card {
+  background: rgba(10, 12, 18, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(180, 40, 40, 0.25);
+  border-radius: 2rem;
+  box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.9), 0 0 0 1px rgba(200, 50, 50, 0.2) inset;
+  padding: 2rem 1.5rem;
+  transition: transform 0.2s ease;
 }
 
-.hero p{
-
-color:#aaa;
-font-size:18px;
-
+/* headings */
+h1, h2, h3 {
+  font-weight: 500;
+  letter-spacing: -0.02em;
 }
 
-/* stats */
-
-.stats{
-
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:40px;
-padding:60px 20px;
-
+h2 {
+  font-size: 2rem;
+  background: linear-gradient(135deg, #f5c2b0, #ff7b6b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border-left: 4px solid #b0302a;
+  padding-left: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
-.stat h2{
-
-font-size:35px;
-color:#00bfff;
-
+.badge {
+  display: inline-block;
+  background: #1e1a1c;
+  border: 1px solid #b04a3a;
+  border-radius: 100px;
+  padding: 0.3rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #f0b0a0;
+  text-transform: uppercase;
 }
 
-/* courses */
-
-.courses{
-
-padding:60px 20px;
-
+.badge i {
+  margin-right: 6px;
 }
 
-.courses ul{
-
-list-style:none;
-margin-top:20px;
-
+.badge-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-.courses li{
-
-padding:10px;
-font-size:18px;
-
+/* glowing title */
+.glowing-title {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin: 1.2rem 0 0.5rem;
+  background: linear-gradient(145deg, #ffc8bb, #ff907c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-/* director */
-
-.director{
-
-padding:60px 20px;
-
+.tagline {
+  font-size: 1.25rem;
+  font-weight: 350;
+  color: #d9c7c0;
+  max-width: 600px;
 }
 
-.director img{
-
-width:180px;
-border-radius:50%;
-margin-bottom:20px;
-
+.tagline i {
+  color: #b04a3a;
+  margin-right: 8px;
 }
 
-.name{
-
-margin-top:10px;
-color:#00bfff;
-
+.hero-text {
+  margin: 1rem 0 1.8rem;
+  color: #bfb6b2;
 }
 
-/* CTA */
-
-.cta{
-
-background:#111;
-padding:80px 20px;
-
+/* call now pill */
+.call-now {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #1f1a1c;
+  border: 1px solid #b04a3a;
+  border-radius: 100px;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #ffcfc0;
+  box-shadow: 0 0 15px #a02e1e60;
+  margin: 1rem 0;
+  transition: 0.2s;
 }
 
-.cta button{
+.call-now i {
+  color: #ff6b5b;
+  font-size: 1.8rem;
+}
 
-padding:12px 30px;
-font-size:16px;
-border:none;
-background:#00bfff;
-color:white;
-border-radius:30px;
-cursor:pointer;
+.call-now span {
+  font-weight: 300;
+  color: #b7a39e;
+  margin-left: 5px;
+}
 
+/* stats grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0 0.5rem;
+}
+
+.stat-item {
+  background: #0f0e14;
+  border-radius: 1.5rem;
+  padding: 1.2rem 0.8rem;
+  text-align: center;
+  border: 1px solid #392d2b;
+  box-shadow: 0 10px 18px -8px #020202;
+}
+
+.stat-number {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #ff8a7a;
+  line-height: 1.2;
+  text-shadow: 0 0 8px #b32e1e80;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #a6a6b0;
+}
+
+/* director section */
+.director-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.director-heading i {
+  color: #b0563b;
+  font-size: 1.8rem;
+}
+
+.director-heading h2 {
+  border-left: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.director-message {
+  background: #0e0b12;
+  padding: 1.6rem;
+  border-radius: 1.8rem;
+  border-left: 6px solid #b03a30;
+  font-style: italic;
+  color: #cfc7c4;
+  box-shadow: inset 0 0 15px #1f0e0b;
+}
+
+.director-message p {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+.director-signature {
+  margin-top: 1.2rem;
+  font-style: normal;
+  border-top: 1px dashed #6a3c34;
+  padding-top: 1rem;
+}
+
+.director-photo-placeholder {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.director-avatar {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(145deg, #492e28, #1a0f0d);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #b04a3a;
+  font-size: 2.5rem;
+  color: #dd8777;
+  box-shadow: 0 0 20px #9f3e2e;
+}
+
+.director-name {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #f7c6ba;
+}
+
+.director-title {
+  color: #b4877a;
+  font-size: 0.9rem;
+}
+
+.quote-mark {
+  font-size: 3rem;
+  color: #5a312a;
+  line-height: 0.5;
+  font-family: serif;
+}
+
+.mentor-bar {
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  background: #191217;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mentor-bar i {
+  color: #b04a3a;
+  font-size: 1.6rem;
+}
+
+.mentor-text {
+  color: #8f7e79;
+}
+
+/* courses header */
+.courses-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.courses-header h2 {
+  margin-bottom: 0;
+}
+
+.courses-subhead {
+  color: #cbb7b0;
+  margin-bottom: 0.5rem;
+}
+
+.sep {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #b04a3a, #6b2c20, transparent);
+  margin: 1.5rem 0;
+}
+
+/* course horizontal scroll */
+.course-section {
+  overflow: hidden;
+  width: 100%;
+}
+
+.course-strip {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.2rem;
+  overflow-x: auto;
+  padding: 0.5rem 0.2rem 1.5rem 0.2rem;
+  scrollbar-width: thin;
+  scrollbar-color: #b04a3a #1e1a1c;
+  -webkit-overflow-scrolling: touch;
+}
+
+.course-strip::-webkit-scrollbar {
+  height: 5px;
+}
+
+.course-strip::-webkit-scrollbar-thumb {
+  background: #b04a3a;
+  border-radius: 20px;
+}
+
+.course-card {
+  flex: 0 0 260px;
+  background: #0f0d12;
+  border: 1px solid #41312e;
+  border-radius: 1.8rem;
+  padding: 1.5rem 1.2rem;
+  box-shadow: 0 15px 25px -10px black;
+  transition: 0.15s transform;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+  border-color: #b05848;
+}
+
+.course-title {
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #fadcd2;
+  margin-bottom: 0.2rem;
+}
+
+.course-sub {
+  color: #ff9b88;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.8rem;
+}
+
+.course-desc {
+  font-size: 0.9rem;
+  color: #bfb0ac;
+  margin: 0.7rem 0;
+}
+
+.arrow-link {
+  display: inline-block;
+  font-size: 1.8rem;
+  line-height: 1;
+  color: #c05a48;
+  text-decoration: none;
+  margin-top: 0.4rem;
+  opacity: 0.9;
+}
+
+.popular-tag {
+  background: #ac2f1a;
+  color: #110b0a;
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 0.2rem 0.8rem;
+  border-radius: 30px;
+  display: inline-block;
+  letter-spacing: 0.5px;
+  border: 1px solid #ff987e;
+}
+
+.popular-tag i {
+  margin-right: 3px;
+}
+
+.footer-note {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #686268;
+  padding: 2rem 0 0.5rem;
+}
+
+/* mobile optimization */
+@media (max-width: 480px) {
+  .container { gap: 1.2rem; }
+  .card { padding: 1.5rem 1rem; border-radius: 1.5rem; }
+  h2 { font-size: 1.8rem; }
+  .stats-grid { gap: 0.8rem; }
+  .stat-number { font-size: 1.9rem; }
+  .call-now { font-size: 1.2rem; padding: 0.6rem 1.5rem; }
+  .glowing-title { font-size: 2rem; }
+  .director-name { font-size: 1.4rem; }
 }

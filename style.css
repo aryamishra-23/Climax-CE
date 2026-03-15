@@ -29,27 +29,15 @@ text-align:center;
 margin-bottom:40px;
 }
 
-.logo-box{
-    display:flex;
-    align-items:center;
-    gap:15px;
-}
-
-.logo-img{
-    width:60px;
-    height:60px;
-}
-
 .logo{
-    margin:0;
-    font-size:24px;
-    font-weight:600;
+font-size:28px;
+font-weight:700;
+letter-spacing:1px;
 }
 
 .tag{
-    margin:0;
-    font-size:14px;
-    color:#ccc;
+color:#aaa;
+margin-top:6px;
 }
 
 .container{
@@ -371,3 +359,99 @@ font-size:28px;
 .logo{
 font-size:22px;
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Climax Computer Education</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<section class="poster">
+
+<div class="overlay">
+
+<header>
+<h2 class="logo">CLIMAX COMPUTER EDUCATION</h2>
+<p class="tag">Digital Skills • Career Growth • Practical Learning</p>
+</header>
+
+<div class="container">
+
+<div class="left">
+
+<h1>Build Your <span>Digital Career</span></h1>
+
+<p class="desc">
+Join the most trusted computer training institute in Gorakhpur.
+Learn practical computer skills and start your professional journey.
+</p>
+
+<div class="courses">
+<span>DCA</span>
+<span>ADCA</span>
+<span>A Level</span>
+<span>O Level</span>
+</div>
+
+<div class="stats">
+
+<div>
+<h2>5000+</h2>
+<p>Students</p>
+</div>
+
+<div>
+<h2>20+</h2>
+<p>Courses</p>
+</div>
+
+<div>
+<h2>8+</h2>
+<p>Years Experience</p>
+</div>
+
+</div>
+
+<div class="cta">
+<a href="#">Free Demo Class</a>
+</div>
+
+</div>
+
+
+<div class="right">
+
+<div class="director-card">
+
+<img src="director.jpg" alt="Director">
+
+<h3>Saurabh Ojha</h3>
+<p>Director & Chief Mentor</p>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<div class="info">
+<p>📍 Near Civil Lines, Gorakhpur</p>
+<p>📞 +91 9005604449</p>
+<p>✉ climaxcomputer2025@gmail.com</p>
+</div>
+
+</footer>
+
+</div>
+
+</section>
+
+</body>
+</html>

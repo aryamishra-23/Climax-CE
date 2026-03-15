@@ -1,344 +1,457 @@
-/* mentor-poster.css – separate file, dark aesthetic with mentor photo */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
-body {
-    background: #0a0e15;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Poppins', 'Segoe UI', Roboto, sans-serif;
-    padding: 2rem;
+body{
+background:#0f0f0f;
+color:white;
 }
 
-/* poster card – dark gritty texture */
-.poster {
-    max-width: 1100px;
-    width: 100%;
-    background: #131b28;
-    background-image: radial-gradient(circle at 20% 30%, #1f2c40 1px, transparent 1px),
-                      radial-gradient(circle at 80% 70%, #1f2c40 1px, transparent 1px);
-    background-size: 45px 45px;
-    border-radius: 4rem 4rem 3rem 3rem;
-    box-shadow: 0 30px 40px -15px #000000, 0 0 0 2px #2d405b inset, 0 0 0 4px #0f1724 inset;
-    padding: 3rem 3.5rem;
-    border: 1px solid #4f6990;
+.poster{
+min-height:100vh;
+background:linear-gradient(120deg,#0f0f0f,#1a1a1a,#0f0f0f);
+display:flex;
+align-items:center;
+justify-content:center;
+padding:40px 20px;
 }
 
-/* ----- HEADER: LOGO LEFT OF TITLE (STRICT) ----- */
-.poster-header {
-    display: flex;
-    align-items: center;
-    gap: 1.8rem;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
+.overlay{
+width:100%;
+max-width:1200px;
 }
 
-.poster-logo {
-    display: block;
-    width: auto;
-    height: 90px;
-    flex-shrink: 0;
-    filter: drop-shadow(0 4px 8px black) drop-shadow(0 0 10px #e5b13e99);
+header{
+text-align:center;
+margin-bottom:40px;
 }
 
-.poster-title {
-    font-size: clamp(2.2rem, 7vw, 4rem);
-    font-weight: 800;
-    line-height: 1.1;
-    text-transform: uppercase;
-    background: linear-gradient(145deg, #e8efff, #b8d0ff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 0 2px 5px #000000, 0 0 20px #5f7bb0;
-    letter-spacing: -0.01em;
-    margin: 0;
+.logo{
+font-size:28px;
+font-weight:700;
+letter-spacing:1px;
 }
 
-/* tagline */
-.poster-tagline {
-    font-size: 1.25rem;
-    font-weight: 400;
-    color: #b1c6ec;
-    border-left: 6px solid #e5b13e;
-    padding-left: 1.4rem;
-    margin: 0.2rem 0 2rem 0;
-    text-transform: lowercase;
-    text-shadow: 0 2px 2px black;
+.tag{
+color:#aaa;
+margin-top:6px;
 }
 
-/* main headline */
-.poster-headline {
-    font-size: clamp(3rem, 10vw, 5.2rem);
-    font-weight: 700;
-    color: #ffffff;
-    line-height: 1.1;
-    margin-bottom: 1.2rem;
-    text-transform: uppercase;
-    text-shadow: 5px 5px 0 #0a121f, 10px 10px 15px #000000;
+.container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:40px;
 }
 
-/* description */
-.poster-description {
-    font-size: 1.3rem;
-    color: #cfddfc;
-    max-width: 800px;
-    margin-bottom: 2.2rem;
-    font-weight: 400;
-    line-height: 1.5;
-    text-shadow: 0 2px 3px black;
+.left{
+flex:1;
 }
 
-/* course pills */
-.course-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.2rem 2.2rem;
-    margin-bottom: 2.8rem;
+.left h1{
+font-size:48px;
+margin-bottom:20px;
 }
 
-.course-item {
-    background: #1c2940e0;
-    backdrop-filter: blur(4px);
-    color: #f7eedb;
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 0.6rem 2.4rem;
-    border-radius: 60px;
-    box-shadow: 0 8px 0 #0d131f, 0 12px 25px #000000;
-    border: 1px solid #e5b13e;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
+.left span{
+color:#00c3ff;
 }
 
-/* stats banner */
-.stats-banner {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.5rem 5rem;
-    background: #101a28dd;
-    padding: 2rem 2.8rem;
-    border-radius: 100px;
-    margin-bottom: 2.5rem;
-    justify-content: center;
-    border: 1px solid #6b89b3;
-    box-shadow: inset 0 2px 8px #000000, 0 12px 18px #00000080;
+.desc{
+color:#bbb;
+margin-bottom:25px;
+line-height:1.6;
 }
 
-.stat-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.courses{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+margin-bottom:25px;
 }
 
-.stat-digit {
-    font-size: 3.6rem;
-    font-weight: 800;
-    color: #fad364;
-    text-shadow: 0 0 15px #f3b13e, 0 4px 8px black;
-    line-height: 1;
+.courses span{
+background:#1f1f1f;
+padding:8px 16px;
+border-radius:20px;
+font-size:14px;
+border:1px solid #333;
 }
 
-.stat-label {
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: #b2caf5;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
+.stats{
+display:flex;
+gap:30px;
+margin-bottom:30px;
 }
 
-/* free demo class */
-.demo-zone {
-    text-align: center;
-    margin: 2rem 0 2.8rem;
+.stats h2{
+color:#00c3ff;
 }
 
-.demo-glow {
-    background: #e5b13e;
-    color: #0c121e;
-    font-size: 3.2rem;
-    font-weight: 800;
-    padding: 1.1rem 3.8rem;
-    border-radius: 120px;
-    display: inline-block;
-    box-shadow: 0 0 40px #facc6f, 0 14px 0 #7e601f, 0 20px 35px black;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    border: 2px solid #ffdb8b;
+.cta a{
+background:#00c3ff;
+color:black;
+padding:12px 26px;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
 }
 
-/* ---------- MENTOR CARD WITH PHOTO (LEFT) + DETAILS (RIGHT) ---------- */
-.mentor-card {
-    background: #0f1a28f0;
-    padding: 2rem 2.5rem;
-    border-radius: 60px;
-    margin: 2rem 0 1.8rem;
-    border-left: 12px solid #e5b13e;
-    border-right: 2px solid #3b5580;
-    box-shadow: 0 0 25px #000000, inset 0 0 10px #1f2f48;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 2.5rem;
+.cta a:hover{
+background:white;
 }
 
-/* photo column (left) */
-.mentor-photo-col {
-    flex-shrink: 0;
+.right{
+flex:1;
+display:flex;
+justify-content:center;
 }
 
-.mentor-photo {
-    display: block;
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    border: 5px solid #e5b13e;
-    box-shadow: 0 0 30px #f5bc4c, 0 10px 20px black;
-    object-fit: cover;
-    background: #1e2c41;
+.director-card{
+background:#151515;
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+max-width:300px;
 }
 
-/* details column (right) */
-.mentor-details-col {
-    flex: 1;
-    min-width: 280px;
+.director-card img{
+width:140px;
+height:140px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:15px;
+border:3px solid #00c3ff;
 }
 
-.mentor-name {
-    font-size: 2.2rem;
-    color: #eaf1ff;
-    margin-bottom: 0.7rem;
-    font-weight: 500;
-    text-shadow: 0 2px 4px black;
+.director-card h3{
+margin-bottom:5px;
 }
 
-.name-light {
-    font-weight: 700;
-    color: #fcd87a;
+.director-card p{
+color:#aaa;
+font-size:14px;
 }
 
-.mentor-title {
-    font-weight: 400;
-    color: #aec4ee;
-    font-size: 1.4rem;
-    margin-left: 1rem;
+footer{
+margin-top:50px;
+text-align:center;
 }
 
-.contact-info {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.5rem;
-    font-size: 1.4rem;
-    color: #deeaff;
-    font-weight: 500;
+.info{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+color:#aaa;
+font-size:14px;
 }
 
-.contact-phone, .contact-email {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    filter: drop-shadow(0 2px 4px black);
+@media(max-width:900px){
+
+.container{
+flex-direction:column;
+text-align:center;
 }
 
-/* footer */
-.poster-footer {
-    text-align: right;
-    font-size: 1rem;
-    font-weight: 400;
-    color: #6c8ab3;
-    margin-top: 1.5rem;
-    border-top: 2px dotted #31486b;
-    padding-top: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
+.left h1{
+font-size:36px;
 }
 
-/* ---------- RESPONSIVE ---------- */
-@media (max-width: 800px) {
-    .poster {
-        padding: 2rem 1.8rem;
-    }
-
-    .poster-logo {
-        height: 70px;
-    }
-
-    .poster-title {
-        font-size: 2.2rem;
-    }
-
-    .course-item {
-        font-size: 1.6rem;
-        padding: 0.5rem 1.8rem;
-    }
-
-    .stats-banner {
-        padding: 1.5rem 1.2rem;
-        gap: 1.8rem;
-    }
-
-    .stat-digit {
-        font-size: 2.8rem;
-    }
-
-    .demo-glow {
-        font-size: 2.4rem;
-        padding: 0.9rem 2.2rem;
-        letter-spacing: 3px;
-    }
-
-    .mentor-card {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 1.5rem;
-        padding: 1.8rem;
-    }
-
-    .mentor-name {
-        font-size: 1.9rem;
-        flex-wrap: wrap;
-    }
-
-    .contact-info {
-        justify-content: center;
-        font-size: 1.2rem;
-        gap: 1.5rem;
-        flex-direction: column;
-        align-items: center;
-    }
+.stats{
+justify-content:center;
 }
 
-@media (max-width: 500px) {
-    .poster-header {
-        gap: 0.8rem;
-    }
-    .poster-logo {
-        height: 55px;
-    }
-    .poster-title {
-        font-size: 1.5rem;
-    }
-    .poster-headline {
-        font-size: 2.2rem;
-    }
-    .course-item {
-        font-size: 1.2rem;
-        padding: 0.4rem 1.2rem;
-    }
-    .demo-glow {
-        font-size: 1.7rem;
-        padding: 0.6rem 1.2rem;
-        letter-spacing: 2px;
-    }
-    .mentor-photo {
-        width: 110px;
-        height: 110px;
-    }
 }
+
+@media(max-width:500px){
+
+.left h1{
+font-size:28px;
+}
+
+.logo{
+font-size:22px;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f0f0f;
+color:white;
+}
+
+.poster{
+min-height:100vh;
+background:linear-gradient(120deg,#0f0f0f,#1a1a1a,#0f0f0f);
+display:flex;
+align-items:center;
+justify-content:center;
+padding:40px 20px;
+}
+
+.overlay{
+width:100%;
+max-width:1200px;
+}
+
+header{
+text-align:center;
+margin-bottom:40px;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+letter-spacing:1px;
+}
+
+.tag{
+color:#aaa;
+margin-top:6px;
+}
+
+.container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:40px;
+}
+
+.left{
+flex:1;
+}
+
+.left h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.left span{
+color:#00c3ff;
+}
+
+.desc{
+color:#bbb;
+margin-bottom:25px;
+line-height:1.6;
+}
+
+.courses{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+margin-bottom:25px;
+}
+
+.courses span{
+background:#1f1f1f;
+padding:8px 16px;
+border-radius:20px;
+font-size:14px;
+border:1px solid #333;
+}
+
+.stats{
+display:flex;
+gap:30px;
+margin-bottom:30px;
+}
+
+.stats h2{
+color:#00c3ff;
+}
+
+.cta a{
+background:#00c3ff;
+color:black;
+padding:12px 26px;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.cta a:hover{
+background:white;
+}
+
+.right{
+flex:1;
+display:flex;
+justify-content:center;
+}
+
+.director-card{
+background:#151515;
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+max-width:300px;
+}
+
+.director-card img{
+width:140px;
+height:140px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:15px;
+border:3px solid #00c3ff;
+}
+
+.director-card h3{
+margin-bottom:5px;
+}
+
+.director-card p{
+color:#aaa;
+font-size:14px;
+}
+
+footer{
+margin-top:50px;
+text-align:center;
+}
+
+.info{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+color:#aaa;
+font-size:14px;
+}
+
+@media(max-width:900px){
+
+.container{
+flex-direction:column;
+text-align:center;
+}
+
+.left h1{
+font-size:36px;
+}
+
+.stats{
+justify-content:center;
+}
+
+}
+
+@media(max-width:500px){
+
+.left h1{
+font-size:28px;
+}
+
+.logo{
+font-size:22px;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Climax Computer Education</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<section class="poster">
+
+<div class="overlay">
+
+<header>
+<h2 class="logo">CLIMAX COMPUTER EDUCATION</h2>
+<p class="tag">Digital Skills • Career Growth • Practical Learning</p>
+</header>
+
+<div class="container">
+
+<div class="left">
+
+<h1>Build Your <span>Digital Career</span></h1>
+
+<p class="desc">
+Join the most trusted computer training institute in Gorakhpur.
+Learn practical computer skills and start your professional journey.
+</p>
+
+<div class="courses">
+<span>DCA</span>
+<span>ADCA</span>
+<span>A Level</span>
+<span>O Level</span>
+</div>
+
+<div class="stats">
+
+<div>
+<h2>5000+</h2>
+<p>Students</p>
+</div>
+
+<div>
+<h2>20+</h2>
+<p>Courses</p>
+</div>
+
+<div>
+<h2>8+</h2>
+<p>Years Experience</p>
+</div>
+
+</div>
+
+<div class="cta">
+<a href="#">Free Demo Class</a>
+</div>
+
+</div>
+
+
+<div class="right">
+
+<div class="director-card">
+
+<img src="saurabh ojha.png" alt="Director">
+
+<h3>Mrs.Saurabh Ojha</h3>
+<p>Director & Chief Mentor</p>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<div class="info">
+<p>📍 Near Civil Lines, Gorakhpur</p>
+<p>📞 +91 9005604449</p>
+<p>✉ climaxcomputer2025@gmail.com</p>
+</div>
+
+</footer>
+
+</div>
+
+</section>
+
+</body>
+</html>

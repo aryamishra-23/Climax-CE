@@ -3,73 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Climax Computer Education · Brand Header</title>
-    <!-- separate CSS file (linked below) -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- inline fallback note: if you prefer truly separate files, 
-         copy the contents inside <style> in styles.css -->
+    <title>Climax Computer Education · Mentor Photo + Left Logo</title>
+    <!-- separate CSS file (mentor-poster.css) -->
+    <link rel="stylesheet" href="mentor-poster.css">
 </head>
 <body>
-    <div class="climax-card">
-        <!-- header line: logo strictly on the left of CLIMAX COMPUTER EDUCATION -->
-        <div class="brand-header">
-            <!-- logo block (left) -->
-            <div class="logo-wrapper">
-                <img src="logo climax.png"
-                     alt="Climax Computer Education logo"
-                     class="brand-logo">
-            </div>
-            <!-- main heading (right after logo) -->
-            <h1 class="institute-name">CLIMAX COMPUTER EDUCATION</h1>
+    <div class="poster">
+
+        <!-- HEADER: logo strictly left of CLIMAX COMPUTER EDUCATION -->
+        <div class="poster-header">
+            <img src="logo climax.png"
+                 alt="climax logo" class="poster-logo">
+            <h1 class="poster-title">CLIMAX COMPUTER EDUCATION</h1>
         </div>
 
-        <!-- subheading / tagline (preserved from original) -->
-        <p class="tagline">Digital Skills • Career Growth • Practical Learning</p>
+        <!-- tagline -->
+        <p class="poster-tagline">digital skills • career growth • practical learning</p>
 
-        <!-- main hero message (same style) -->
-        <h2 class="hero-title">Build Your Digital Career</h2>
-        <p class="description">Join the most trusted computer training institute in Gorakhpur. Learn practical computer skills and start your professional journey.</p>
+        <!-- main headline -->
+        <h2 class="poster-headline">BUILD YOUR<br>DIGITAL CAREER</h2>
 
-        <!-- course badges (DCA | ADCA | A Level | O Level) -->
-        <div class="course-row">
-            <span class="course-badge">DCA</span>
-            <span class="course-badge">ADCA</span>
-            <span class="course-badge">A Level</span>
-            <span class="course-badge">O Level</span>
+        <!-- description -->
+        <p class="poster-description">
+            Join the most trusted computer training institute in Gorakhpur.  
+            Learn practical computer skills and start your professional journey.
+        </p>
+
+        <!-- course pills -->
+        <div class="course-grid">
+            <span class="course-item">DCA</span>
+            <span class="course-item">ADCA</span>
+            <span class="course-item">A Level</span>
+            <span class="course-item">O Level</span>
         </div>
 
-        <!-- stats row: 5000+ Students • 20+ Courses • 8+ Years Experience -->
-        <div class="stats-row">
-            <div class="stat-item">
-                <span class="stat-number">5000+</span>
-                <span class="stat-label">Students</span>
+        <!-- stats banner -->
+        <div class="stats-banner">
+            <div class="stat-block">
+                <span class="stat-digit">5000+</span>
+                <span class="stat-label">students</span>
             </div>
-            <div class="stat-item">
-                <span class="stat-number">20+</span>
-                <span class="stat-label">Courses</span>
+            <div class="stat-block">
+                <span class="stat-digit">20+</span>
+                <span class="stat-label">courses</span>
             </div>
-            <div class="stat-item">
-                <span class="stat-number">8+</span>
-                <span class="stat-label">Years Experience</span>
-            </div>
-        </div>
-
-        <!-- Free Demo Class button (prominent) -->
-        <div class="demo-section">
-            <button class="demo-btn">Free Demo Class</button>
-        </div>
-
-        <!-- director info + contact (as per image) -->
-        <div class="mentor-info">
-            <p class="director-name"><strong>Saurabh Ojha</strong> <span class="mentor-title">Director & Chief Mentor</span></p>
-            <div class="contact-details">
-                <span class="contact-item">📞 +91 9005604449</span>
-                <span class="contact-item">✉️ climaxcomputer2025@gmail.com</span>
+            <div class="stat-block">
+                <span class="stat-digit">8+</span>
+                <span class="stat-label">years</span>
             </div>
         </div>
 
-        <!-- subtle footer note (optional) -->
-        <div class="brand-footer">⏻ trusted computer training · since 2017</div>
+        <!-- free demo class button -->
+        <div class="demo-zone">
+            <span class="demo-glow">FREE DEMO CLASS</span>
+        </div>
+
+        <!-- MENTOR SECTION WITH PHOTO (left) + NAME & CONTACT (right) -->
+        <div class="mentor-card">
+            <!-- mentor photo on left -->
+            <div class="mentor-photo-col">
+                <img src="saurabh ojha.png"
+                     alt="Mentor Saurabh Ojha" class="mentor-photo">
+            </div>
+            <!-- mentor text details on right -->
+            <div class="mentor-details-col">
+                <p class="mentor-name"><span class="name-light">Saurabh Ojha</span> <span class="mentor-title">Director & Chief Mentor</span></p>
+                <div class="contact-info">
+                    <span class="contact-phone">📞 +91 9005604449</span>
+                    <span class="contact-email">✉️ climaxcomputer2025@gmail.com</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="poster-footer">#1 trusted computer training · gorakhpur · est. 2017</div>
     </div>
 </body>
 </html>

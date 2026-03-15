@@ -37,13 +37,13 @@ header {
 }
 
 .logo-img {
-  width: 100px;
-  height: 100px;
+  width: 55px;
+  height: 55px;
   object-fit: cover;
   float:left;
   margin-right:20px;
   margin-bottom:15px;
-  border-radius:50%;
+  border-radius:70%;
 }
 
 .logo {
